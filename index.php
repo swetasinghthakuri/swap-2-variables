@@ -1,13 +1,36 @@
+<style>
+    .box {
+        height:100px;
+        width: 100px;
+        background:maroon;
+        margin-bottom:5px;
+        display: inline-flex;
+        margin-right:5px;
+         justify-content: center;   
+        align-items: center;      
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+         
+    }
+    .box:hover {
+        background: grey; 
+
+         
+    }
+    
+
+
+</style>
 <?php
-$number_1 = 20;
-$number_2 = 10;
+$number=1;
+for($row = 1; $row <= 4; $row++){
+    for($col = 1; $col <= 4; $col++){
 
-echo "Before swapping: number_1 = $number_1, number_2 = $number_2<br>";
+echo "<div class='box'>$number</div>";
+$number++;
+}
+echo "<br>";
+}
 
-
-$number_1 = $number_1 + $number_2;
-$number_2 = $number_1 - $number_2;
-$number_1 = $number_1 - $number_2;
-
-echo "After swapping: number_1 = $number_1, number_2 = $number_2";
- ?>
+?>
