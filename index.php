@@ -14,9 +14,7 @@
          
     }
     .box:hover {
-        background: grey; git push origin master
-
-        
+        background: grey;
     }
     
 
